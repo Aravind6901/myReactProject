@@ -6,7 +6,8 @@ class HomePage extends Component {
         super();
         this.state = {
             age:props.data.OrgAge,
-            numb:props.data.Num
+            numb:props.data.Num,
+            homeLink : "Changed Link"
         };
     }
 
@@ -14,6 +15,11 @@ class HomePage extends Component {
         this.setState({
             age : this.state.age + 2
         });
+    }
+
+    onChangeLink(){
+        console.log(this.state.homeLink);
+        this.props.changeLink(this.state.homeLink);
     }
     render() {
         return (
@@ -25,7 +31,7 @@ class HomePage extends Component {
                 <ul>
                     {this.props.data.days.map((W, i) => <li key={i}>{W}</li>)}
                 </ul>
-                <button onClick={() => this.props.changeLink('asdf')}>Click Me To Chane Btn Name</button>
+                <button onClick={this.onChangeLink.bind(this)}>Click Me To Chane Btn Name</button>
                 {this.props.children}
             </div>
         );
