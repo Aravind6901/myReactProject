@@ -8,7 +8,8 @@ class Mind extends Component {
         var myOb = {
             days: ["today", "tomo", "dayAfter"],
             name: "Aravind",
-            OrgAge: 26
+            OrgAge: 26,
+            Num :1
         };
         return (
             <div>

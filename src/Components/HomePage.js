@@ -5,7 +5,8 @@ class HomePage extends Component {
     constructor(props) {
         super();
         this.state = {
-            age:props.data.OrgAge
+            age:props.data.OrgAge,
+            numb:props.data.Num
         };
     }
 
