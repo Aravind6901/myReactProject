@@ -6,8 +6,9 @@ import TextCont from "./Components/TextCont";
 class Mind extends Component {
     render() {
         var myOb = {
-            days: ["today", "tomo", "repu"],
-            name: "Aravind"
+            days: ["today", "tomo", "dayAfter"],
+            name: "Aravind",
+            OrgAge: 26
         };
         return (
             <div>
@@ -15,7 +16,6 @@ class Mind extends Component {
                 <HomePage data={myOb}>
                     <div>
                         <h1>one ding</h1>
-                        <h1>two ding</h1>
                     </div>
                 </HomePage>
                 <TextCont />
