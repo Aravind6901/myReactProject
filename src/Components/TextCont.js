@@ -8,7 +8,7 @@ const TextCont = (props) => {
     }
     return (
         <div>
-            <h1>In TextCont {a + a}</h1>
+            <p>I am From TextCont Component</p>
         </div>
     );
 }

@@ -25,6 +25,7 @@ class HomePage extends Component {
                 <ul>
                     {this.props.data.days.map((W, i) => <li key={i}>{W}</li>)}
                 </ul>
+                <button onClick={() => this.props.changeLink('asdf')}>Click Me To Chane Btn Name</button>
                 {this.props.children}
             </div>
         );
@@ -33,7 +34,8 @@ class HomePage extends Component {
 
 HomePage.PropTypes = {
     data: PropTypes.object,
-    children: PropTypes.element.isRequired
+    children: PropTypes.element.isRequired,
+    changeLink:PropTypes.func
 };
 
 export default HomePage;
